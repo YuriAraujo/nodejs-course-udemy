@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
 			message.from,
 			message.text
 		));
-		callback('Server originated');
+		callback();
 	});
 
 	socket.on('createLocationMessage', (coords) => {
